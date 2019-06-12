@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { AppointmentComponent } from './dashboard/appointment/appointment.component';
-import { ClientsComponent } from './dashboard/appointment/clients/clients.component';
-import { ServicesComponent } from './dashboard/appointment/services/services.component';
-import { DateTimeComponent } from './dashboard/appointment/date-time/date-time.component';
-import { StaffComponent } from './dashboard/appointment/staff/staff.component';
-import { ResourcesComponent } from './dashboard/appointment/resources/resources.component';
+import { NavComponent } from './layout/nav/nav.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { AppointmentComponent } from './layout/dashboard/appointment/appointment.component';
+import { ClientsComponent } from './layout/dashboard/appointment/clients/clients.component';
+import { ServicesComponent } from './layout/dashboard/appointment/services/services.component';
+import { DateTimeComponent } from './layout/dashboard/appointment/date-time/date-time.component';
+import { StaffComponent } from './layout/dashboard/appointment/staff/staff.component';
+import { ResourcesComponent } from './layout/dashboard/appointment/resources/resources.component';
+import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './layout/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ResourcesComponent } from './dashboard/appointment/resources/resources.
     ServicesComponent,
     DateTimeComponent,
     StaffComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    LayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
