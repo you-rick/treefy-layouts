@@ -1,25 +1,16 @@
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
+
+html {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 article,
 aside,
@@ -96,14 +87,6 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-}
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-  font-family: "National", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ==========================================================================

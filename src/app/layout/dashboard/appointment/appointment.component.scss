@@ -1,0 +1,24 @@
+.cols-wrap {
+  .col {
+    & + .col {
+      border-left: 1px solid #f5f5f5;
+    }
+  }
+}
+.appointment-notes-wrap {
+  margin-top: 40px;
+}
+.appointment-bottom-panel {
+ border-top: 1px solid #f5f5f5;
+  .bottom-nav {
+    display: block;
+    & > li {
+      display: inline;
+      & + li {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+

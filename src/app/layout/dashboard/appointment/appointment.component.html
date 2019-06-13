@@ -1,5 +1,9 @@
-<div class="container-fluid">
-  <div class="row">
+<div class="appointment-wrapper">
+  <div class="container-fluid">
+
+  <h1 class="mb-4">New Appointment</h1>
+
+  <div class="row cols-wrap">
     <div class="col">
       <app-clients></app-clients>
     </div>
@@ -16,4 +20,58 @@
       <app-resources></app-resources>
     </div>
   </div>
+  <!-- /.cols-wrap -->
+
+  <div class="row appointment-notes-wrap">
+    <div class="col">
+      <form>
+        <div class="form-group">
+          <label class="text-black-50">Message to The Client</label>
+          <textarea class="form-control" rows="2"></textarea>
+        </div>
+      </form> 
+    </div>
+    <div class="col">
+      <form>
+        <div class="form-group">
+          <label class="text-black-50">Note for Staff Only</label>
+          <textarea class="form-control" rows="2"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- /.appointment-notes-wrap -->
+
+  <footer class="appointment-bottom-panel">
+    <div class="row">
+      <div class="col-auto mr-auto">
+        <label class="switch-control">
+          <span class="switch-box">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </span>
+          Calendar
+        </label>
+      </div>
+      <div class="col-auto text-right">
+        <ul class="bottom-nav">
+            <li><a href="#">Repeat</a></li>
+            <li><a href="#">Add Next Service</a></li>
+            <li>
+              <span class="total-price-wrap">
+                <span class="price-box">&euro;100</span>
+                <a href="#" class="price-edit">
+
+                </a>
+              </span>
+            </li>
+            <li><button type="button" class="btn btn-outline-secondary btn-sm">Cancel</button></li>
+            <li><button class="btn btn-primary" type="submit">Save</button></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
 </div>
+
+
