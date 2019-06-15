@@ -1,0 +1,51 @@
+.date-calendar-wrap {
+  text-align: center;
+  color: #566172;
+  margin-top: 15px;
+  .headline {
+    font-size: 37px;
+    font-weight: 300;
+    color: inherit;
+  }
+  .date-calendar-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arrow {
+    &.prev {}
+    &.next {}
+    img {}
+  }
+  .date-box {
+    font-size: 81px;
+    font-weight: 300;
+    line-height: 102px;
+  }
+  .weekday-box {
+    font-size: 16px;
+    color: #a3a3a3;
+  }
+}
+
+.time-picker-wrap {
+  margin-top: 30px;
+  text-align: center;
+  .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    .input-group {}
+    .divider {
+      font-size: 18px;
+      color: #909090;
+      padding: 0 8px;
+    }
+  }
+  .timespan {
+    font-size: 16px;
+    color: #a3a3a3;
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Warning Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Warning-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#FF2727" cx="7.5" cy="7.5" r="7.5"></circle>
+        <text id="!" font-family="SourceSansPro-SemiBold, Source Sans Pro SemiBold" font-size="16" font-weight="500" fill="#FFFFFF">
+            <tspan x="4.96" y="13">!</tspan>
+        </text>
+    </g>
+</svg>

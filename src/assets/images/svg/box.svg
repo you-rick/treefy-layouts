@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="112px" viewBox="0 0 96 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Box</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Box" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <polygon id="Path" stroke="#979797" stroke-width="2" points="48 1 1 27.5 48 54 95 27.6227966"></polygon>
+        <polyline id="Path-2" stroke="#979797" stroke-width="2" points="1 28 1 82.3438616 48 111 95 82.3438616 95 28"></polyline>
+        <path d="M48.5,54 L48.5,111" id="Path-3" stroke="#979797" stroke-width="2"></path>
+    </g>
+</svg>

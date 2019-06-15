@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Ball</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Ball" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#979797" cx="57" cy="57" r="56"></circle>
+        <path d="M86,33 C98.0205633,38.5523785 110.108848,51.1554051 112,66" id="Path-3" stroke="#979797"></path>
+        <path d="M77.8553444,42 C79.1495576,67.3692537 71.8580097,89.7658733 52,113" id="Path-4" stroke="#979797"></path>
+        <path d="M60,30 C35.9966237,38.2067452 18.3681337,53.7099008 5,79" id="Path-5" stroke="#979797"></path>
+        <path d="M66,19 C55.3771565,11.6726546 37.3713198,9.02901938 22,12.5347679" id="Path-6" stroke="#979797"></path>
+        <path d="M79,21 C81,16.0724389 82,11.4057723 82,7" id="Path-8" stroke="#979797"></path>
+        <ellipse id="Oval" stroke="#979797" transform="translate(72.902629, 30.345773) rotate(31.000000) translate(-72.902629, -30.345773) " cx="72.9026289" cy="30.3457725" rx="13.5" ry="11"></ellipse>
+    </g>
+</svg>

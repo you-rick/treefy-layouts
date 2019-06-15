@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Timeline Note Expired</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C1C1C1" offset="0%"></stop>
+            <stop stop-color="#A7A7A7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M11.8975787,21.678114 L7,24 L8.77182812,18.9665785 C8.73644205,18.9089799 8.70185825,18.8507958 8.66809027,18.7920397 C8.06008585,17.7341151 7.71656257,16.4907515 7.71656257,15.140991 C7.71656257,11.1971306 10.9136931,8 14.8575536,8 L17.859009,8 C19.2087695,8 20.4521331,8.34352327 21.5100577,8.95152769 C22.5679823,9.55953211 23.4404679,10.4320177 24.0484723,11.4899423 C24.6564767,12.5478669 25,13.7912305 25,15.140991 C25,16.4907515 24.6564767,17.7341151 24.0484723,18.7920397 C23.4404679,19.8499643 22.5679823,20.7224499 21.5100577,21.3304543 C20.4521331,21.9384587 19.2087695,22.281982 17.859009,22.281982 L14.8575536,22.281982 C13.7915526,22.281982 12.7919154,22.0677137 11.8975787,21.678114 Z" id="path-2"></path>
+        <filter x="-86.0%" y="-87.5%" width="263.8%" height="286.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101043488 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Timeline-Note-Expired" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Combined-Shape-Copy">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <path stroke="#FFFFFF" stroke-width="2" d="M11.9312689,22.7688306 L5.25988446,25.9316576 L7.6767756,19.0657367 C7.0482864,17.8857016 6.71656257,16.5474177 6.71656257,15.140991 C6.71656257,10.6448458 10.3614084,7 14.8575536,7 L17.859009,7 C19.3554428,7 20.7747328,7.37554107 22.0083427,8.08451438 C23.2196239,8.78065504 24.219345,9.7803761 24.9154856,10.9916573 C25.6244589,12.2252672 26,13.6445572 26,15.140991 C26,16.6374248 25.6244589,18.0567147 24.9154856,19.2903247 C24.219345,20.5016059 23.2196239,21.5013269 22.0083427,22.1974676 C20.7747328,22.9064409 19.3554428,23.281982 17.859009,23.281982 L14.8575536,23.281982 C13.8360102,23.281982 12.8492362,23.1070832 11.9312689,22.7688306 Z" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
+        </g>
+    </g>
+</svg>

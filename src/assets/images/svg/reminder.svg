@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="25px" viewBox="0 0 23 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Reminder</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Reminder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <circle id="Oval" stroke="#979797" cx="11.3339747" cy="14.0304232" r="10"></circle>
+        <polyline id="Path" stroke="#979797" points="11.3339747 9.45459904 11.3339747 14.0304232 16.2292893 10.8903868"></polyline>
+        <path d="M16.2292893,1 L21.3339747,4.80721776" id="Path-7" stroke="#979797"></path>
+        <path d="M1.33397471,1 L6.43866009,4.80721776" id="Path-7-Copy" stroke="#979797" transform="translate(3.886317, 2.903609) scale(-1, 1) translate(-3.886317, -2.903609) "></path>
+    </g>
+</svg>

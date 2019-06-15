@@ -366,15 +366,15 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 *::-webkit-input-placeholder {
-  color: #ccc;
+  color: #cccbcb !important;
 }
 
 *:-moz-placeholder {
-  color: #ccc;
+  color: #cccbcb !important;
 }
 
 *::-moz-placeholder {
-  color: #ccc;
+  color: #cccbcb !important;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {

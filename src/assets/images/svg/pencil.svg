@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="24px" viewBox="0 0 7 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Pencil</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pencil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1,16.5 L6,16.5" id="Line-2" stroke="#979797"></path>
+        <path d="M1,5.5 L6,5.5" id="Line-2-Copy" stroke="#979797"></path>
+        <path d="M3.5,1 C4.88071187,1 6,2.11703921 6,3.4949769 L6,17.9854313 L3.5,23 L1,17.9854313 L1,3.4949769 C1,2.11703921 2.11928813,1 3.5,1 Z" id="Rectangle" stroke="#979797"></path>
+    </g>
+</svg>

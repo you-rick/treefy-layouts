@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="173px" viewBox="0 0 7 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Arrow Dashed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Arrow-Dashed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M3.5,0.5 L3.5,162.994558" id="Line-3" stroke="#979797" stroke-linecap="square" stroke-dasharray="4,3"></path>
+        <polygon id="Path-2" fill="#979797" points="-3.97903932e-13 164 7 164 3.50600323 173"></polygon>
+    </g>
+</svg>

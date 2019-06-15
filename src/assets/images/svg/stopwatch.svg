@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="37px" viewBox="0 0 30 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Stopwatch</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Stopwatch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="12" y="1" width="6" height="34" rx="3"></rect>
+        <path d="M17.5468816,4.85126485 C18.6514511,4.85126485 19.5468816,5.74669535 19.5468816,6.85126485 L19.5468816,8.92232892 C17.5578863,25.5265824 16.224553,33.8362341 15.5468816,33.851284 C14.8912197,33.86582 14.8912197,25.5857541 15.5468816,9.01108642 L15.5468816,6.85126485 C15.5468816,5.74669535 16.4423121,4.85126485 17.5468816,4.85126485 Z" id="Rectangle" stroke="#979797" fill="#FFFFFF" transform="translate(17.301008, 19.351274) rotate(-315.000000) translate(-17.301008, -19.351274) "></path>
+        <circle id="Oval" stroke="#979797" fill="#FFFFFF" cx="15" cy="22" r="14"></circle>
+        <polygon id="Path-2" stroke="#979797" stroke-linejoin="round" points="21 16 11 23.9671005 12.993496 26"></polygon>
+    </g>
+</svg>
