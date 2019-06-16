@@ -17,16 +17,74 @@ h4, h5, h6 {
   color: $baseColor;
 }
 
+/* === Components. Forms === */
+.btn {
+  &.form-button {
+    &:not(.btn-sm):not(.btn-sm) {
+      padding: 0.438rem 2.377rem;
+    }
+    &.btn-sm {
+      font-size: 16px;
+      padding: 0.188rem 1.534rem;
+    }
+  }
+}
+
+.form-control {
+  &.lg {
+    height: 46px;
+  }
+}
+
+.input-group {
+  &[class*="addon"] {
+    position: relative;
+    &.addon-search {
+      &:after {
+        content: "";
+        width: 19px;
+        height: 21px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        z-index: 2;
+        background: url(~/assets/images/svg/search.svg) no-repeat top center;
+        @include background-size(cover);
+      }
+    }
+    &.addon-date {
+      &:after {
+        content: "";
+        width: 21px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        z-index: 2;
+        background: url(~/assets/images/svg/calendar.svg) no-repeat top center;
+        @include background-size(cover);
+      }
+    }
+    .form-control {
+      padding-right: 40px;
+    }
+  }
+}
+
 
 /* === Appointment Shared Elements === */
 .appointment-col {
 
 }
 
+
+
 .panel {
   padding: 15px 17px;
   background: #fff;
-  @include shadow(0 0 3px rgba(0,0,0,0.1));
+  @include shadow(0 2px 10px 0 rgba(0, 0, 0, 0.05));
   @include radius(4px);
   @include from-md-screen {
     min-height: 74px;
@@ -39,12 +97,20 @@ h4, h5, h6 {
   &.media {
     align-items: center;
   }
+  &.default {
+    h6 {
+      color: #a3a3a3;
+    }
+  }
   & + .panel {
-    margin-top: 10px;
+    margin-top: 12px;
   }
   h6 {
     font-weight: 600;
     display: block;
+  }
+  .text-secondary {
+    color: #a3a3a3 !important;
   }
 }
 
@@ -55,6 +121,12 @@ h4, h5, h6 {
       width: 44px;
       border-radius: 50%;
     }
+  }
+  .panel-divider {
+    display: block;
+    height: 1px;
+    background: url(~/assets/images/svg/h-dots.svg) repeat-x top left;
+    margin: 15px 0;
   }
 }
 

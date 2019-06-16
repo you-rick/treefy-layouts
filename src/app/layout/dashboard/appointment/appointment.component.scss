@@ -1,7 +1,21 @@
+.container-headline {
+  margin-bottom: 34px;
+}
 .cols-wrap {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 20px;
   .col {
     & + .col {
-      border-left: 1px solid #f5f5f5;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 38px;
+        left: 0;
+        height: calc(100% - 18px);
+        width: 1px;
+        border-left: 1px solid #f5f5f5;
+      }
     }
   }
 }
@@ -11,12 +25,35 @@
 .appointment-bottom-panel {
   border-top: 1px solid #f5f5f5;
   padding-top: 20px;
+  margin-bottom: 20px;
   .bottom-nav {
-    display: block;
+    display: flex;
+    align-items: center;
     & > li {
       display: inline;
       & + li {
-        margin-left: 20px;
+        margin-left: 30px;
+      }
+    }
+    .controls-nav {
+      .btn + .btn {
+        margin-left: 15px;
+      }
+    }
+    .total-price-wrap {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 10px;
+      .price-box {
+          font-size: 32px;
+          color: #626262;
+          margin-right: 5px;
+          line-height: 1;
+      }
+      .price-edit {
+        img {
+
+        }
       }
     }
   }
