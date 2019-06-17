@@ -1,0 +1,38 @@
+@import "~src/assets/styles/mixins";
+.next-service-box {
+  @include radius(4px);
+  @include shadow(0 2px 10px 0 rgba(0, 0, 0, 0.05));
+  border: solid 2px #97a6bf;
+  & > .row {
+    & > .col {
+      position: relative;
+      & + .col {
+        &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 1px;
+              border-left: 1px solid #f5f5f5;
+        }
+      }
+    }
+  }
+  .panel {
+    @include shadow(none);
+  }
+}
+
+.waiting-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background: url(~src/assets/images/svg/services_arrow.svg) no-repeat bottom center;
+  .time {
+    font-size: 16px;
+    color: #b3b2b2;
+    background: #fff;
+  }
+}

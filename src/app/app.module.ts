@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { AppointmentComponent } from './layout/dashboard/appointment/appointment.component';
+import { NextServiceComponent } from './layout/dashboard/appointment/next-service/next-service.component';
 import { ClientsComponent } from './layout/dashboard/appointment/clients/clients.component';
 import { ServicesComponent } from './layout/dashboard/appointment/services/services.component';
 import { DateTimeComponent } from './layout/dashboard/appointment/date-time/date-time.component';
@@ -13,6 +14,7 @@ import { StaffComponent } from './layout/dashboard/appointment/staff/staff.compo
 import { ResourcesComponent } from './layout/dashboard/appointment/resources/resources.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './layout/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { HomeComponent } from './layout/home/home.component';
     StaffComponent,
     ResourcesComponent,
     LayoutComponent,
-    HomeComponent
+    HomeComponent,
+    NextServiceComponent
   ],
   imports: [
     BrowserModule,
