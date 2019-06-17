@@ -37,7 +37,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
-    .input-group {}
+    .input-group {
+      .form-control {
+        text-align: center;
+      }
+    }
     .divider {
       font-size: 18px;
       color: #909090;
