@@ -1,3 +1,6 @@
+@import "~src/assets/styles/mixins";
+@import "~src/assets/styles/variables";
+
 .container-headline {
   margin-bottom: 34px;
 }
@@ -34,7 +37,7 @@
 .appointment-bottom-panel {
   border-top: 1px solid #f5f5f5;
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   .bottom-nav {
     display: flex;
     align-items: center;
@@ -48,6 +51,18 @@
       .btn + .btn {
         margin-left: 15px;
       }
+    }
+    .services-number {
+      width: 26px;
+      height: 26px;
+      margin-left: 5px;
+      font: normal 600 16px/18px $font-family-base;
+      color: #fff;
+      text-align: center;
+      border: 3px solid #ffffff;
+      background-image: linear-gradient(to bottom, #35e42b, #21cc17);
+      @include radius(50%);
+      @include shadow(0 2px 10px 0 rgba(0, 0, 0, 0.11));
     }
     .total-price-wrap {
       display: inline-flex;

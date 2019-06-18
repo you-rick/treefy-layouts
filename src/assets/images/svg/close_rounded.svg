@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Close Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="List-Block-Selected" transform="translate(-237.000000, -11.000000)">
+            <g id="Close-Icon" transform="translate(237.000000, 11.000000)">
+                <circle id="Oval" fill-opacity="0.0634014423" fill="#000000" fill-rule="evenodd" cx="11.5" cy="11.5" r="11.5"></circle>
+                <path d="M6.46875,6.46875 L16.53125,16.53125" id="Line-2" stroke="#959595" stroke-width="1" stroke-linecap="square"></path>
+                <path d="M16.53125,6.46875 L6.46875,16.53125" id="Line-3" stroke="#959595" stroke-width="1" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
