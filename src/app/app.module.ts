@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { StaffComponent } from './layout/dashboard/appointment/staff/staff.compo
 import { ResourcesComponent } from './layout/dashboard/appointment/resources/resources.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './layout/home/home.component';
+import { RepeatPopupComponent } from './layout/dashboard/appointment/repeat-popup/repeat-popup.component';
 
 
 @NgModule({
@@ -29,11 +31,13 @@ import { HomeComponent } from './layout/home/home.component';
     ResourcesComponent,
     LayoutComponent,
     HomeComponent,
-    NextServiceComponent
+    NextServiceComponent,
+    RepeatPopupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

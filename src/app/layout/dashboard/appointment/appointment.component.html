@@ -34,6 +34,12 @@
   </div>
   <!-- /.cols-wrap -->
 
+
+  <!-- Repeat Popup -->
+
+   <app-repeat-popup></app-repeat-popup>
+
+
   <div class="row appointment-notes-wrap">
     <div class="col">
       <form>
@@ -66,7 +72,7 @@
       </div>
       <div class="col-auto text-right">
         <ul class="bottom-nav">
-            <li><a href="#">Repeat</a></li>
+            <li><a (click)="openModal()">Repeat</a></li>
             <li class="d-flex">
               Total Services:
               <i class="services-number">2</i>
