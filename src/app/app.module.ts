@@ -15,6 +15,11 @@ import { StaffComponent } from './layout/dashboard/appointment/staff/staff.compo
 import { ResourcesComponent } from './layout/dashboard/appointment/resources/resources.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './layout/home/home.component';
+import { ClientsSectionComponent } from './layout/dashboard/clients-section/clients-section.component';
+import { ClientSearchComponent } from './layout/dashboard/clients-section/client-search/client-search.component';
+import { ClientInfoComponent } from './layout/dashboard/clients-section/client-info/client-info.component';
+import { ClientAppointmentsComponent } from './layout/dashboard/clients-section/client-appointments/client-appointments.component';
+import { ClientPaymentsComponent } from './layout/dashboard/clients-section/client-payments/client-payments.component';
 
 
 @NgModule({
@@ -30,7 +35,12 @@ import { HomeComponent } from './layout/home/home.component';
     ResourcesComponent,
     LayoutComponent,
     HomeComponent,
-    NextServiceComponent
+    NextServiceComponent,
+    ClientsSectionComponent,
+    ClientSearchComponent,
+    ClientInfoComponent,
+    ClientAppointmentsComponent,
+    ClientPaymentsComponent
   ],
   imports: [
     BrowserModule,
