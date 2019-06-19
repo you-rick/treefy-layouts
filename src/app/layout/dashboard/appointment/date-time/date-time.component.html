@@ -1,7 +1,7 @@
 <div class="appointment-col">
   <h3>Date & Time</h3>
   <div class="input-group addon-date">
-    <input type="text" class="form-control lg" placeholder="yyyy/mm/dd">
+    <input type="text" class="form-control lg" placeholder="yyyy/mm/dd" ngbDatepicker #d="ngbDatepicker" (focus)="d.toggle()">
   </div>
 
   <section class="date-calendar-wrap">
