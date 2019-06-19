@@ -1,3 +1,4 @@
+@import "variables";
 @import "mixins";
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,6 +16,17 @@ h2, h3 {
 }
 h4, h5, h6 {
   color: $baseColor;
+}
+
+.text-secondary {
+  color: #a3a3a3 !important;
+}
+
+.pb-p17 {
+  padding-bottom: 17px !important;
+}
+.pt-p17 {
+  padding-top: 17px !important;
 }
 
 /* === Components. Forms === */
@@ -82,6 +94,220 @@ h4, h5, h6 {
     }
   }
 }
+
+/* === Shared Components === */
+.custom-counter-wrap {
+  display: flex;
+  align-items: center;
+  .button {
+    img {
+
+    }
+  }
+  .form-control {
+    width: 50px;
+    margin: 0 8px;
+    text-align: center;
+  }
+}
+
+.radio-toggle-wrap {
+  display: flex;
+  justify-content: flex-start;
+  .toggle-box {
+    cursor: pointer;
+    margin-bottom: 0;
+    &:first-child {
+      span { @include radius(50px 0 0 50px); }
+    }
+    &:last-child {
+      span {
+        border-left: 0;
+        @include radius(0 50px 50px 0);
+      }
+    }
+    [type="radio"] {
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+      &:checked + span {
+        background: #f0f0f0;
+      }
+    }
+    span {
+      width: 38px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #626262;
+      background: #fff;
+      border: solid 1px #e0e0e0;
+    }
+  }
+}
+
+.datepicker-box {
+  display: flex;
+  align-items: center;
+  .label-text {
+    color: #a3a3a3;
+  }
+  .form-control {
+    margin: 0 10px;
+    width: 146px;
+  }
+  .calendar-btn {
+    img {
+      width: 21px;
+    }
+    &:hover {}
+  }
+}
+
+
+/* === Components. Modal === */
+.modal-header {
+  border-bottom: 0;
+  .modal-title {
+    color: #909090;
+  }
+  .close {
+    opacity: 1;
+    img {
+      width: 26px;
+    }
+  }
+}
+
+.modal-footer {
+  border-top-color: #f5f5f5;
+}
+
+
+/* ======== Repeat Service Popup ======= */
+
+/* Don't know how to apply these styles in Appointment Component,
+   this should be moved to relevant component later */
+
+.modal {
+  &.repeat-service {
+    .modal-dialog {
+      max-width: 840px;
+    }
+
+    .row {
+      &.first {
+        border-bottom: 1px solid #f5f5f5;
+        [class*="col"] {
+          padding-bottom: 17px;
+        }
+      }
+      &.second {}
+      [class*="col"]:first-child {
+        border-right: 1px solid #f5f5f5;
+      }
+    }
+
+    .service-info-list {
+      padding: 17px 15px;
+      margin-bottom: 0;
+      li {
+        span {}
+        p {
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+    }
+
+    .discount-info-list {
+      padding: 17px 15px;
+      margin-bottom: 0;
+      border-top: 1px solid #f5f5f5;
+      & > li {}
+      .set-discount-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+    }
+
+    .totals-list {
+      padding: 17px 15px;
+      margin-bottom: 0;
+      border-top: 1px solid #f5f5f5;
+      text-align: right;
+      li {
+        p {
+          color: #a3a3a3;
+          margin-bottom: 0;
+          line-height: 1.3;
+          span {
+            color: #626262;
+            font-size: 18px;
+            margin-left: 5px;
+          }
+        }
+        &.total {
+          margin-top: 20px;
+          span {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+    .calendar-lines {
+      .line {
+        padding: 15px 17px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include shadow(0 2px 10px 0 rgba(0, 0, 0, 0.05));
+        @include radius(4px);
+        & + .line {
+          margin-top: 12px;
+        }
+        .datepicker-box {
+          .form-control {
+            width: 120px;
+          }
+        }
+        .timepicker-box {
+          display: flex;
+          align-items: center;
+          .time-btn {
+            img {
+              width: 18px;
+            }
+          }
+          .input-group {
+            width: 70px;
+            margin: 0 8px;
+            .form-control {
+              text-align: center;
+            }
+          }
+          .divider {
+            font-size: 18px;
+            color: #909090;
+          }
+          .close-btn {
+            margin-left: 14px;
+            img {
+              width: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 
 /* === Appointment Shared Elements === */
@@ -166,9 +392,6 @@ h4, h5, h6 {
   h6 {
     font-weight: 600;
     display: block;
-  }
-  .text-secondary {
-    color: #a3a3a3 !important;
   }
 }
 

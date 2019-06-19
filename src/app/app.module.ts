@@ -15,7 +15,6 @@ import { StaffComponent } from './layout/dashboard/appointment/staff/staff.compo
 import { ResourcesComponent } from './layout/dashboard/appointment/resources/resources.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './layout/home/home.component';
-import { RepeatPopupComponent } from './layout/dashboard/appointment/repeat-popup/repeat-popup.component';
 
 
 @NgModule({
@@ -31,8 +30,7 @@ import { RepeatPopupComponent } from './layout/dashboard/appointment/repeat-popu
     ResourcesComponent,
     LayoutComponent,
     HomeComponent,
-    NextServiceComponent,
-    RepeatPopupComponent
+    NextServiceComponent
   ],
   imports: [
     BrowserModule,

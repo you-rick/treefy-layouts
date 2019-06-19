@@ -37,7 +37,6 @@
 
   <!-- Repeat Popup -->
 
-   <app-repeat-popup></app-repeat-popup>
 
 
   <div class="row appointment-notes-wrap">
@@ -72,7 +71,7 @@
       </div>
       <div class="col-auto text-right">
         <ul class="bottom-nav">
-            <li><a (click)="openModal()">Repeat</a></li>
+            <li><span class="link" (click)="open(content)">Repeat</span></li>
             <li class="d-flex">
               Total Services:
               <i class="services-number">2</i>
@@ -100,3 +99,210 @@
 </div>
 
 
+<!--- Repeat Service Popup --->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Repeat Service</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.close('Cross click')">
+      <img src="assets/images/svg/close_round.svg" alt="Close" />
+    </button>
+  </div>
+  <div class="modal-body pb-0">
+
+    <div class="row first">
+      <div class="col-8">
+        <p class="text-secondary mb-2">Repeat Every</p>
+        <select class="custom-select">
+          <option value="1">1 Day</option>
+          <option value="2">2 Days</option>
+          <option value="3">3 Days</option>
+        </select>
+      </div>
+      <div class="col-16">
+        <p class="text-secondary mb-2">Number of Appointments</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="custom-counter-wrap">
+             <button class="button">
+                <img src="assets/images/svg/blue_minus.svg" alt="decrease" />
+             </button>
+             <input type="text" class="form-control" placeholder="0%" />
+             <button class="button">
+                <img src="assets/images/svg/blue_plus.svg" alt="increase" />
+             </button>
+          </div>
+          <!-- /.custom-counter-wrap -->
+
+          <div class="datepicker-box">
+            <span class="label-text">Until:</span>
+            <input type="text" class="form-control" placeholder="2019/04/09" />
+            <button class="calendar-btn">
+              <img src="assets/images/svg/calendar.svg" alt="Select Date" />
+            </button>
+          </div>
+          <!-- /.datepicker-box -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row second">
+      <div class="col-8 p-0">
+        <ul class="service-info-list">
+          <li>
+            <span class="text-secondary">Client</span>
+            <p><a routerLink="#">Steven Van Wel</a></p>
+          </li>
+          <li>
+            <span class="text-secondary">Service</span>
+            <p><a routerLink="#">In Clinic Whitening</a></p>
+          </li>
+          <li>
+            <span class="text-secondary">Email</span>
+            <p><a routerLink="#">steven@example.com</a></p>
+          </li>
+        </ul>
+        <!-- /.service-info-list -->
+
+        <ul class="discount-info-list">
+          <li>
+            <span class="label-text text-secondary">Client Discount</span>
+            <p>5%</p>
+          </li>
+          <li>
+            <span class="label-text text-secondary">Additional discount</span>
+            <div class="set-discount-box">
+              <div class="radio-toggle-wrap">
+                <label class="toggle-box">
+                  <input type="radio" name="discount" checked="checked" />
+                  <span>%</span>
+                </label>
+                <label class="toggle-box">
+                  <input type="radio" name="discount" />
+                  <span>&euro;</span>
+                </label>
+              </div>
+              <!-- /.radio-toggle-wrap -->
+              <div class="custom-counter-wrap">
+                <button class="button">
+                  <img src="assets/images/svg/blue_minus.svg" alt="decrease" />
+                </button>
+                <input type="text" class="form-control" placeholder="0%" />
+                <button class="button">
+                  <img src="assets/images/svg/blue_plus.svg" alt="increase" />
+                </button>
+              </div>
+              <!-- /.custom-counter-wrap -->
+
+            </div>
+            <!-- /.set-discount-box -->
+          </li>
+        </ul>
+        <!-- /.discount-info-list -->
+
+        <ul class="totals-list">
+          <li>
+            <p>Total appointments: <span>3</span></p>
+          </li>
+          <li>
+            <p>Full Price: <span>&euro;4,740</span></p>
+          </li>
+          <li>
+            <p>Total discount (5%): <span>&euro;237</span></p>
+          </li>
+          <li class="total">
+            <p>Total: <span>&euro;4,503</span></p>
+          </li>
+        </ul>
+        <!-- /.totals-list -->
+      </div>
+      <div class="col-16">
+        <p class="text-secondary pt-p17">Will be added to the calendar:</p>
+
+        <div class="calendar-lines">
+          <div class="line">
+            <div class="datepicker-box">
+              <button class="calendar-btn">
+                <img src="assets/images/svg/calendar.svg" alt="Select Date" />
+              </button>
+              <input type="text" class="form-control" placeholder="2019/04/09" />
+              <span class="label-text">Tuesday</span>
+            </div>
+
+            <div class="timepicker-box">
+              <button class="time-btn">
+                <img src="assets/images/svg/time.svg" alt="Select Date" />
+              </button>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="HH:MM" value="11:15">
+              </div>
+              <div class="divider">—</div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="HH:MM" value="12:30">
+              </div>
+              <button class="close-btn">
+                <img src="assets/images/svg/close_round.svg" alt="Select Date" />
+              </button>
+            </div>
+          </div>
+          <!-- /.line -->
+          <div class="line">
+            <div class="datepicker-box">
+              <button class="calendar-btn">
+                <img src="assets/images/svg/calendar.svg" alt="Select Date" />
+              </button>
+              <input type="text" class="form-control" placeholder="2019/04/09" />
+              <span class="label-text">Tuesday</span>
+            </div>
+
+            <div class="timepicker-box">
+              <button class="time-btn">
+                <img src="assets/images/svg/time.svg" alt="Select Date" />
+              </button>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="HH:MM" value="11:15">
+              </div>
+              <div class="divider">—</div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="HH:MM" value="12:30">
+              </div>
+              <button class="close-btn">
+                <img src="assets/images/svg/close_round.svg" alt="Select Date" />
+              </button>
+            </div>
+          </div>
+          <!-- /.line -->
+          <div class="line">
+            <div class="datepicker-box">
+              <button class="calendar-btn">
+                <img src="assets/images/svg/calendar.svg" alt="Select Date" />
+              </button>
+              <input type="text" class="form-control" placeholder="2019/04/09" />
+              <span class="label-text">Tuesday</span>
+            </div>
+
+            <div class="timepicker-box">
+              <button class="time-btn">
+                <img src="assets/images/svg/time.svg" alt="Select Date" />
+              </button>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="HH:MM" value="11:15">
+              </div>
+              <div class="divider">—</div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="HH:MM" value="12:30">
+              </div>
+              <button class="close-btn">
+                <img src="assets/images/svg/close_round.svg" alt="Select Date" />
+              </button>
+            </div>
+          </div>
+          <!-- /.line -->
+        </div>
+        <!-- /.calendar-lines -->
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="form-button btn btn-outline-secondary btn-sm" (click)="modal.close('Cross click')">Cancel</button>
+    <button type="button" class="form-button btn btn-primary" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
