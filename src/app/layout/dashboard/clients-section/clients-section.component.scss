@@ -1,0 +1,9 @@
+.clients-section-outer-wrap {
+  .col {
+    padding-right: 35px;
+    &  + .col {
+      border-left: 1px solid #f5f5f5;
+      padding-left: 35px;
+    }
+  }
+}
