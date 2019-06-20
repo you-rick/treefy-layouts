@@ -63,6 +63,12 @@ h4, h5, h6 {
   }
 }
 
+.controls-nav {
+  .btn + .btn {
+    margin-left: 15px;
+  }
+}
+
 .input-group {
   &[class*="addon"] {
     position: relative;
@@ -91,6 +97,20 @@ h4, h5, h6 {
         top: 14px;
         z-index: 4;
         background: url(~src/assets/images/svg/calendar.svg) no-repeat top center;
+        @include background-size(cover);
+      }
+    }
+    &.addon-time {
+      &:after {
+        content: "";
+        width: 18px;
+        height: 19px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        z-index: 4;
+        background: url(~src/assets/images/svg/time.svg) no-repeat top center;
         @include background-size(cover);
       }
     }

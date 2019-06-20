@@ -1,0 +1,91 @@
+<div class="internal-note-wrapper">
+  <div class="container-fluid">
+
+    <h1 class="container-headline">New Internal Note</h1>
+
+    <div class="row">
+      <div class="col-14">
+        <div class="row cols-wrap">
+          <section class="col-8 pb-p17">
+            <h3 class="section-headline mb-3">Staff Member</h3>
+              <div class="input-group addon-search">
+                <input type="text" class="form-control lg" placeholder="Name, ID">
+              </div>
+              <div class="entity-list">
+                <div class="media panel">
+                  <img src="assets/images/placeholders/users/loki.png" class="mr-3 media-img" alt="Img 1">
+                  <div class="media-body">
+                    <h6 class="m-0">Alex Doe</h6>
+                    <p class="text-secondary mb-0">Sep 7, 1983</p>
+                  </div>
+                </div>
+                <div class="media panel">
+                  <img src="assets/images/placeholders/users/andreas.png" class="mr-3 media-img" alt="Img 1">
+                  <div class="media-body">
+                    <h6 class="m-0">Andreas Brixen</h6>
+                    <p class="text-secondary mb-0">Sep 7, 1983</p>
+                  </div>
+                </div>
+                <div class="media panel">
+                  <img src="assets/images/placeholders/users/thomas.png" class="mr-3 media-img" alt="Img 1">
+                  <div class="media-body">
+                    <h6 class="m-0">Thomas Brown</h6>
+                    <p class="text-secondary mb-0">Sep 7, 1983</p>
+                  </div>
+                </div>
+                    <div class="media panel">
+                  <img src="assets/images/placeholders/users/chris.png" class="mr-3 media-img" alt="Img 1">
+                  <div class="media-body">
+                    <h6 class="m-0">David Johnson</h6>
+                    <p class="text-secondary mb-0">Sep 7, 1983</p>
+                  </div>
+                </div>
+                <div class="media panel">
+                  <img src="assets/images/placeholders/users/sophia.png" class="mr-3 media-img" alt="Img 1">
+                  <div class="media-body">
+                    <h6 class="m-0">Sophia Doe</h6>
+                    <p class="text-secondary mb-0">Sep 7, 1983</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section class="col-16">
+            <h3 class="section-headline mb-3">Date & Time</h3>
+            <div class="row justify-content-between mb-5">
+
+              <div class="col date-box">
+                <div class="input-group addon-date">
+                  <input type="text" class="form-control lg" placeholder="yyyy/mm/dd" ngbDatepicker #d="ngbDatepicker" (focus)="d.toggle()">
+                </div>
+              </div>
+
+              <div class="col time-box">
+                <div class="input-group addon-time">
+                  <input type="text" class="form-control lg" placeholder="HH/MM" value="11:15">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-5">
+                <h3 class="section-headline">Message</h3>
+                <textarea class="form-control" rows="5"></textarea>
+                <p class="text-secondary">Type <span class="text-danger">@</span> to add refernece to the client or staff member</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="text-right">
+              <nav class="controls-nav">
+                <button type="button" class="form-button btn btn-outline-secondary btn-sm">Cancel</button>
+                <button class="form-button btn btn-primary" type="submit">Save</button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

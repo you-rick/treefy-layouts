@@ -20,6 +20,7 @@ import { ClientSearchComponent } from './layout/dashboard/clients-section/client
 import { ClientInfoComponent } from './layout/dashboard/clients-section/client-info/client-info.component';
 import { ClientAppointmentsComponent } from './layout/dashboard/clients-section/client-appointments/client-appointments.component';
 import { ClientPaymentsComponent } from './layout/dashboard/clients-section/client-payments/client-payments.component';
+import { InternalNoteComponent } from './layout/dashboard/internal-note/internal-note.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ClientPaymentsComponent } from './layout/dashboard/clients-section/clie
     ClientSearchComponent,
     ClientInfoComponent,
     ClientAppointmentsComponent,
-    ClientPaymentsComponent
+    ClientPaymentsComponent,
+    InternalNoteComponent
   ],
   imports: [
     BrowserModule,
