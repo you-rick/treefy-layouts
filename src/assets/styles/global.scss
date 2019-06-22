@@ -196,6 +196,14 @@ h4, h5, h6 {
       border: solid 1px #e0e0e0;
     }
   }
+
+  &.day-week {
+    .toggle-box {
+      span {
+        width: 123px;
+      }
+    }
+  }
 }
 
 .datepicker-box {
@@ -479,6 +487,7 @@ h4, h5, h6 {
 .switch-control {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 .switch-box {
   position: relative;

@@ -21,6 +21,10 @@ import { ClientInfoComponent } from './layout/dashboard/clients-section/client-i
 import { ClientAppointmentsComponent } from './layout/dashboard/clients-section/client-appointments/client-appointments.component';
 import { ClientPaymentsComponent } from './layout/dashboard/clients-section/client-payments/client-payments.component';
 import { InternalNoteComponent } from './layout/dashboard/internal-note/internal-note.component';
+import { CalendarComponent } from './layout/dashboard/calendar/calendar.component';
+import { CalendarTopbarComponent } from './layout/dashboard/calendar/calendar-topbar/calendar-topbar.component';
+import { CalendarLeftbarComponent } from './layout/dashboard/calendar/calendar-leftbar/calendar-leftbar.component';
+import { CalendarInitialComponent } from './layout/dashboard/calendar/calendar-initial/calendar-initial.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { InternalNoteComponent } from './layout/dashboard/internal-note/internal
     ClientInfoComponent,
     ClientAppointmentsComponent,
     ClientPaymentsComponent,
-    InternalNoteComponent
+    InternalNoteComponent,
+    CalendarComponent,
+    CalendarTopbarComponent,
+    CalendarLeftbarComponent,
+    CalendarInitialComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,194 @@
+<div class="row">
+  <div class="col leftbar-fixed">
+    <div class="radio-toggle-wrap day-week">
+      <label class="toggle-box">
+        <input type="radio" name="day-week" checked="checked"/>
+        <span>Day</span>
+      </label>
+      <label class="toggle-box">
+        <input type="radio" name="day-week"/>
+        <span>Week</span>
+      </label>
+    </div>
+    <!-- /.radio-toggle-wrap -->
+  </div>
+  <!-- /.col.leftbar-fixed -->
+
+  <div class="col">
+    <div class="calendar-topbar-wrap">
+      <ul class="filters-list">
+        <li ngbDropdown>
+          <button type="button" class="filter-toggle-btn" ngbDropdownToggle id="servicesFilter">All Services</button>
+          <div ngbDropdownMenu aria-labelledby="servicesFilter">
+            <div class="filter-popup">
+
+              <header class="filter-header">
+                <strong>Service</strong>
+                <a href="#" class="reset-btn">Reset</a>
+              </header>
+              <!-- /.filter-header -->
+
+              <div class="filter-body">
+                <form>
+                  <div class="input-group addon-search">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">
+                      Magnetic Resonance
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">
+                      Tomography
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">
+                      Ultrasonography
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <!-- /.filter-body -->
+
+              <footer class="filter-footer">
+                <button type="button" class="form-button btn btn-primary">Apply</button>
+              </footer>
+            </div>
+          </div>
+        </li>
+        <!-- /ngbDropdown -->
+
+        <li ngbDropdown>
+          <button type="button" class="filter-toggle-btn" ngbDropdownToggle id="membersFilter">All Members</button>
+          <div ngbDropdownMenu aria-labelledby="membersFilter">
+            <div class="filter-popup">
+
+              <header class="filter-header">
+                <strong>Members</strong>
+                <a href="#" class="reset-btn">Reset</a>
+              </header>
+              <!-- /.filter-header -->
+
+              <div class="filter-body">
+                <form>
+                  <div class="input-group addon-search">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">
+                      Member #1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">
+                      Member #2
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <!-- /.filter-body -->
+
+              <footer class="filter-footer">
+                <button type="button" class="form-button btn btn-primary">Apply</button>
+              </footer>
+            </div>
+          </div>
+        </li>
+        <!-- /ngbDropdown -->
+
+        <li ngbDropdown>
+          <button type="button" class="filter-toggle-btn" ngbDropdownToggle id="resourcesFilter">All Resources</button>
+          <div ngbDropdownMenu aria-labelledby="resourcesFilter">
+            <div class="filter-popup">
+
+              <header class="filter-header">
+                <strong>Resources</strong>
+                <a href="#" class="reset-btn">Reset</a>
+              </header>
+              <!-- /.filter-header -->
+
+              <div class="filter-body">
+                Filter body..
+              </div>
+              <!-- /.filter-body -->
+
+              <footer class="filter-footer">
+                <button type="button" class="form-button btn btn-primary">Apply</button>
+              </footer>
+            </div>
+          </div>
+        </li>
+        <!-- /ngbDropdown -->
+
+        <li ngbDropdown>
+          <button type="button" class="filter-toggle-btn" ngbDropdownToggle id="clientsFilter">All Clients</button>
+          <div ngbDropdownMenu aria-labelledby="clientsFilter">
+            <div class="filter-popup">
+
+              <header class="filter-header">
+                <strong>Client</strong>
+                <a href="#" class="reset-btn">Reset</a>
+              </header>
+              <!-- /.filter-header -->
+
+              <div class="filter-body">
+                Filter body..
+              </div>
+              <!-- /.filter-body -->
+
+              <footer class="filter-footer">
+                <button type="button" class="form-button btn btn-primary">Apply</button>
+              </footer>
+            </div>
+          </div>
+        </li>
+        <!-- /ngbDropdown -->
+
+        <li ngbDropdown>
+          <button type="button" class="filter-toggle-btn" ngbDropdownToggle id="statusFilter">Any Status</button>
+          <div ngbDropdownMenu aria-labelledby="statusFilter">
+            <div class="filter-popup">
+
+              <header class="filter-header">
+                <strong>Status</strong>
+                <a href="#" class="reset-btn">Reset</a>
+              </header>
+              <!-- /.filter-header -->
+
+              <div class="filter-body">
+                Filter body..
+              </div>
+              <!-- /.filter-body -->
+
+              <footer class="filter-footer">
+                <button type="button" class="form-button btn btn-primary">Apply</button>
+              </footer>
+            </div>
+          </div>
+        </li>
+        <!-- /ngbDropdown -->
+      </ul>
+
+      <label class="switch-control">
+        <span class="switch-box">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </span>
+        Notes
+      </label>
+
+      <div>
+        <a href="#" class="header-notification new">
+          <img src="assets/images/svg/notification.svg" alt="Note" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
