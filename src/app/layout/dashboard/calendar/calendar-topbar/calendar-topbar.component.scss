@@ -49,8 +49,8 @@
       height: 5px;
       border: 0;
       position: absolute;
-      top: 0.9em;
-      right: 15px;
+      top: 0.75em;
+      right: 10px;
       background: url("~src/assets/images/svg/arrow_down.svg") no-repeat center;
       @include background-size(cover);
     }

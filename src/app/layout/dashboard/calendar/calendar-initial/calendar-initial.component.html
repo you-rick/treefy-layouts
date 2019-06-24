@@ -1,63 +1,161 @@
- <div class="calendar-inner-wrap">
+<div class="calendar-inner-wrap">
 
-    <ul class="staff-list">
-      <li style="width: 50%;">
-        <div class="media">
-          <img src="assets/images/placeholders/users/andreas.png" class="mr-3 media-img" alt="Img 1">
-          <div class="media-body">
-            <h6 class="m-0">Andreas Brixen</h6>
-            <p class="text-secondary mb-0">9:00 - 18:00</p>
-          </div>
+  <ul class="staff-list">
+    <li style="width: 50%;">
+      <div class="media">
+        <img src="assets/images/placeholders/users/andreas.png" class="mr-3 media-img" alt="Img 1">
+        <div class="media-body">
+          <h6 class="m-0">Andreas Brixen</h6>
+          <p class="text-secondary mb-0">9:00 - 18:00</p>
         </div>
-      </li>
-      <li style="width: 50%;">
-        <div class="media">
-          <img src="assets/images/placeholders/users/thomas.png" class="mr-3 media-img" alt="Img 1">
-          <div class="media-body">
-            <h6 class="m-0">Alex Doe</h6>
-            <p class="text-secondary mb-0">9:00 - 18:00</p>
-          </div>
+      </div>
+    </li>
+    <li style="width: 50%;">
+      <div class="media">
+        <img src="assets/images/placeholders/users/thomas.png" class="mr-3 media-img" alt="Img 1">
+        <div class="media-body">
+          <h6 class="m-0">Alex Doe</h6>
+          <p class="text-secondary mb-0">9:00 - 18:00</p>
         </div>
-      </li>
-    </ul>
-    <!-- /.staff-list -->
+      </div>
+    </li>
+  </ul>
+  <!-- /.staff-list -->
 
-    <div class="calendar-grid">
-      <div class="calendar-content">
-        <div class="column" style="width: 50%;"></div>
-        <div class="column" style="width: 50%;"></div>
+  <div class="calendar-grid">
+    <div class="calendar-content">
+
+      <div class="column" style="width: 50%;">
+        <div class="bookings-list">
+          <div class="booking-box color-1" style="top: 194px; height: 90px;">
+            <div class="booking-body">
+              <p class="description">
+                <span class="booking-time">11:10 - 12:10</span>
+                <span class="booking-type">Ultrasonography</span>
+                <span class="booking-name">Thomas Anderson</span>
+              </p>
+            </div>
+          </div>
+          <!-- /.booking-box -->
+
+          <div class="booking-box color-2" style="top: 360px;">
+            <div class="booking-body">
+              <p class="description">
+                <img src="assets/images/svg/lock_small.svg" alt="Locked" class="booking-icon"/>
+                <span class="booking-time">13:00 - 13:15</span>
+                <span class="booking-type">Tool maintenance</span>
+              </p>
+            </div>
+          </div>
+          <!-- /.booking-box -->
+
+          <div class="note-box" style="top: 595px;">
+            <div class="note-body">
+              <img src="assets/images/svg/message_orange.svg" alt="Notification"/>
+              <p class="text-secondary">
+                15:45 - Call <a href="#">@Sophia Lillis</a><span class="text-lighter">by Ava Gregoraci</span>
+              </p>
+            </div>
+          </div>
+          <!-- /.note-box -->
+        </div>
       </div>
 
+      <div class="column" style="width: 50%;">
+        <div class="bookings-list">
+          <div class="booking-box color-3" style="top: 270px; height: 110px;">
+            <div class="booking-body">
+              <p class="description">
+                <span class="booking-time">12:00 - 13:15</span>
+                <span class="booking-type">Regenerative Therapy</span>
+                <span class="booking-name">Alex Gordon</span>
+              </p>
+            </div>
+          </div>
+          <!-- /.booking-box -->
 
-      <div class="calendar-sessions">
-        <div class="session-item"><span>9:00</span></div>
-        <div class="session-item"><span>10:00</span></div>
-        <div class="session-item"><span>11:00</span></div>
-        <div class="session-item"><span>12:00</span></div>
-        <div class="session-item"><span>13:00</span></div>
-        <div class="session-item"><span>14:00</span></div>
-        <div class="session-item"><span>15:00</span></div>
-        <div class="session-item"><span>16:00</span></div>
-        <div class="session-item"><span>17:00</span></div>
-        <div class="session-item"><span>18:00</span></div>
+          <div class="note-box" style="top: 505px;">
+            <div class="note-body">
+              <img src="assets/images/svg/message_orange.svg" alt="Notification"/>
+              <span class="text-secondary">14:45 - Schedule a meeting</span>
+            </div>
+          </div>
+          <!-- /.note-box -->
+        </div>
       </div>
-      <!-- /.calendar-sessions -->
-
-      <div class="calendar-grid-body">
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-        <div class="hour-line"></div>
-      </div>
-      <!-- /.calendar-grid-body -->
-
     </div>
-    <!-- /.calendar-grid -->
+    <!-- /.calendar-content -->
+
+    <div class="current-time-wrap" style="height: 225px;">
+      <div class="blue-bg"></div>
+      <div class="current-time">
+        <span>11:30</span>
+        <div class="line"></div>
+      </div>
+    </div>
+    <!-- /.current-time-wrap -->
+
+
+    <div class="calendar-sessions">
+      <div class="session-item"><span>9:00</span></div>
+      <div class="session-item"><span>10:00</span></div>
+      <div class="session-item"><span>11:00</span></div>
+      <div class="session-item"><span>12:00</span></div>
+      <div class="session-item"><span>13:00</span></div>
+      <div class="session-item"><span>14:00</span></div>
+      <div class="session-item"><span>15:00</span></div>
+      <div class="session-item"><span>16:00</span></div>
+      <div class="session-item"><span>17:00</span></div>
+      <div class="session-item"><span>18:00</span></div>
+    </div>
+    <!-- /.calendar-sessions -->
+
+    <div class="calendar-grid-body">
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+      <div class="hour-line"></div>
+    </div>
+    <!-- /.calendar-grid-body -->
+
+
+    <div class="calendar-popup" style="top: 600px; left: 60%;">
+      <ul class="popup-list">
+        <li>
+          <span class="img-wrap">
+            <img src="/assets/images/svg/lock_small.svg" alt="Time Reservation"/>
+          </span>
+          <span class="text">New Time Reservation</span>
+        </li>
+        <li>
+          <span class="img-wrap">
+          <img src="/assets/images/svg/user_small.svg" alt="Appointment"/>
+          </span>
+          <span class="text">New Appointment</span>
+        </li>
+        <li>
+          <span class="img-wrap">
+          <img src="/assets/images/svg/payment_small.svg" alt="Payment"/>
+            </span>
+          <span class="text">New Payment</span>
+        </li>
+        <li>
+          <span class="img-wrap">
+          <img src="/assets/images/svg/note_small.svg" alt="Note"/>
+            </span>
+          <span class="text">New Note</span>
+        </li>
+      </ul>
+    </div>
+    <!-- /.calendar-popup -->
+
   </div>
+  <!-- /.calendar-grid -->
+</div>
 
