@@ -7,6 +7,7 @@ import {CalendarComponent} from './calendar.component';
 import {CalendarLeftbarComponent} from './calendar-leftbar/calendar-leftbar.component';
 import {CalendarTopbarComponent} from './calendar-topbar/calendar-topbar.component';
 import {CalendarInitialComponent} from './calendar-initial/calendar-initial.component';
+import { CalendarWeeksComponent } from './calendar-weeks/calendar-weeks.component';
 
 
 
@@ -15,7 +16,8 @@ import {CalendarInitialComponent} from './calendar-initial/calendar-initial.comp
     CalendarComponent,
     CalendarTopbarComponent,
     CalendarLeftbarComponent,
-    CalendarInitialComponent
+    CalendarInitialComponent,
+    CalendarWeeksComponent
   ],
   imports: [
     CommonModule,

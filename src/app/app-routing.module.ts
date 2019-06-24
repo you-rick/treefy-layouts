@@ -6,9 +6,11 @@ import {ClientsSectionComponent} from './layout/dashboard/clients-section/client
 import {InternalNoteComponent} from './layout/dashboard/internal-note/internal-note.component';
 import {CalendarComponent} from './layout/dashboard/calendar/calendar.component';
 import {CalendarInitialComponent} from './layout/dashboard/calendar/calendar-initial/calendar-initial.component';
+import {CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks/calendar-weeks.component';
 
 const calendarRoutes: Routes = [
-  { path: 'calendar-init', component: CalendarInitialComponent }
+  { path: 'calendar-init', component: CalendarInitialComponent },
+  { path: 'calendar-weeks', component: CalendarWeeksComponent }
 ]
 
 const routes: Routes = [
