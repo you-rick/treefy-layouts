@@ -1,0 +1,11 @@
+.dashboard-outer-wrap {
+  min-height: 100vh;
+}
+.dashboard-outer-wrap > .row {
+  min-height: 100vh;
+}
+.nav-sidebar {
+  flex: 0 0 200px;
+  background: #eee;
+  min-height: 100%;
+}

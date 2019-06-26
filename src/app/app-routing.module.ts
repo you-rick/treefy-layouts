@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {HomeComponent} from './layout/home/home.component';
 import {AppointmentComponent} from './layout/dashboard/appointment/appointment.component';
 import {ClientsSectionComponent} from './layout/dashboard/clients-section/clients-section.component';
@@ -11,14 +13,19 @@ import {CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks
 const calendarRoutes: Routes = [
   { path: 'calendar-init', component: CalendarInitialComponent },
   { path: 'calendar-weeks', component: CalendarWeeksComponent }
-]
+];
 
-const routes: Routes = [
-  { path: '', component: HomeComponent },
+const dashboardRoutes: Routes = [
   { path: 'new-appointment', component: AppointmentComponent },
   { path: 'clients', component: ClientsSectionComponent },
   { path: 'internal-note', component: InternalNoteComponent },
   {path: 'calendar', component: CalendarComponent, children: calendarRoutes}
+];
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'dashboard', component: DashboardComponent, children: dashboardRoutes}
+
 ];
 
 @NgModule({

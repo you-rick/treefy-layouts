@@ -26,6 +26,9 @@ import { CalendarTopbarComponent } from './layout/dashboard/calendar/calendar-to
 import { CalendarLeftbarComponent } from './layout/dashboard/calendar/calendar-leftbar/calendar-leftbar.component';
 import { CalendarInitialComponent } from './layout/dashboard/calendar/calendar-initial/calendar-initial.component';
 import {CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks/calendar-weeks.component';
+import { AuthenticationComponent } from './layout/authentication/authentication.component';
+import { SignInComponent } from './layout/authentication/sign-in/sign-in.component';
+import { SignUpComponent } from './layout/authentication/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -52,7 +55,10 @@ import {CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks
     CalendarTopbarComponent,
     CalendarLeftbarComponent,
     CalendarInitialComponent,
-    CalendarWeeksComponent
+    CalendarWeeksComponent,
+    AuthenticationComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
