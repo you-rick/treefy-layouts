@@ -8,7 +8,7 @@ import {CalendarLeftbarComponent} from './calendar-leftbar/calendar-leftbar.comp
 import {CalendarTopbarComponent} from './calendar-topbar/calendar-topbar.component';
 import {CalendarInitialComponent} from './calendar-initial/calendar-initial.component';
 import { CalendarWeeksComponent } from './calendar-weeks/calendar-weeks.component';
-import {NavComponent} from '../../nav/nav.component';
+import {NavComponent} from '../nav/nav.component';
 
 
 @NgModule({

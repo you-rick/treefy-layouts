@@ -4,7 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './layout/nav/nav.component';
+import { NavComponent } from './layout/dashboard/nav/nav.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { AppointmentComponent } from './layout/dashboard/appointment/appointment.component';
 import { NextServiceComponent } from './layout/dashboard/appointment/next-service/next-service.component';
@@ -29,6 +29,8 @@ import {CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks
 import { AuthenticationComponent } from './layout/authentication/authentication.component';
 import { SignInComponent } from './layout/authentication/sign-in/sign-in.component';
 import { SignUpComponent } from './layout/authentication/sign-up/sign-up.component';
+import { SharedComponent } from './layout/shared/shared.component';
+import { HeaderComponent } from './layout/shared/header/header.component';
 
 
 @NgModule({
@@ -58,7 +60,9 @@ import { SignUpComponent } from './layout/authentication/sign-up/sign-up.compone
     CalendarWeeksComponent,
     AuthenticationComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    SharedComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
