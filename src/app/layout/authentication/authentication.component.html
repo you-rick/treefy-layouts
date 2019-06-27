@@ -1,6 +1,16 @@
-<div>
+<div class="auth-main-wrap">
+
   <app-header></app-header>
+
+  <div class="auth-outer-wrap">
+    <div class="auth-popup">
+      <div class="auth-body">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
 </div>
-<div>
-   <router-outlet></router-outlet>
-</div>
+

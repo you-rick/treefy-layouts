@@ -31,6 +31,7 @@ import { SignInComponent } from './layout/authentication/sign-in/sign-in.compone
 import { SignUpComponent } from './layout/authentication/sign-up/sign-up.component';
 import { SharedComponent } from './layout/shared/shared.component';
 import { HeaderComponent } from './layout/shared/header/header.component';
+import { FooterComponent } from './layout/shared/footer/footer.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { HeaderComponent } from './layout/shared/header/header.component';
     SignInComponent,
     SignUpComponent,
     SharedComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
