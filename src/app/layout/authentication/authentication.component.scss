@@ -1,5 +1,8 @@
+@import "~src/assets/styles/variables";
 @import "~src/assets/styles/mixins";
 
+
+/* === Popup Wrapper === */
 .auth-main-wrap {
   min-height: 100vh;
   width: 100%;
@@ -8,15 +11,15 @@
 
   &:before {
     content: "";
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    bottom: -55vh;
+    bottom: -58vh;
     height: 100vh;
-    background: #cfe0d5;
-    background: -moz-linear-gradient(left, #cfe0d5 0%, #8fb9a4 100%);
-    background: -webkit-linear-gradient(left, #cfe0d5 0%, #8fb9a4 100%);
-    background: linear-gradient(to right, #cfe0d5 0%, #8fb9a4 100%);
+    background: #cfdfd5;
+    background: -moz-linear-gradient(left, #cfdfd5 0%, #8ab29e 96%);
+    background: -webkit-linear-gradient(left, #cfdfd5 0%, #8ab29e 96%);
+    background: linear-gradient(to right, #cfdfd5 0%, #8ab29e 96%);
     -webkit-transform: skew(0, -13deg);
     transform: skew(0, -13deg);
     z-index: 0;
@@ -28,7 +31,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(100vh - 260px);
+  min-height: calc(100vh - 260px);
   align-items: center;
   justify-content: center;
 
@@ -36,7 +39,185 @@
     width: 600px;
     padding: 40px 50px;
     background: #fff;
-    @include shadow(0px 14px 24px 0px rgba(5, 2, 6, 0.05));
+    margin: 40px 0;
+    @include shadow(8px -10px 24px 0px rgba(5, 2, 6, 0.05));
     @include radius(6px);
+  }
+}
+
+
+/* === Popup Elements === */
+.auth-popup-body {
+  -webkit-font-smoothing: initial;
+
+  .input-group {
+    margin-bottom: 34px;
+
+    &.with-icon {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .icon-box {
+        text-align: center;
+        margin-right: 18px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .auth-btn {
+      padding: 0 20px;
+      & + .auth-btn {
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+.remember-me {
+  font-weight: 100;
+  font-size: 20px;
+  color: #8ab29e;
+  user-select: none;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  margin-top: 18px;
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+
+    &:checked {
+      & + span {
+        &:before {
+          background-position: top left;
+        }
+      }
+    }
+  }
+
+  span {
+    padding-left: 30px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      background: url("~src/assets/images/png-icons/check-sprite.png") no-repeat bottom left;
+    }
+  }
+}
+
+.forget-pass {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-headline {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 50px;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.form-control {
+  &.field {
+    width: 440px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #999999;
+    background: #f4f8f6;
+    padding: 0 12px;
+    margin-bottom: 0;
+    border: 0;
+    @include shadow(none);
+    @include radius(6px);
+  }
+
+  &::-webkit-input-placeholder {
+    color: #999 !important;
+  }
+
+  &:-moz-placeholder {
+    color: #999 !important;
+  }
+
+  &::-moz-placeholder {
+    color: #999 !important;
+  }
+}
+
+.auth-btn {
+  font: 500 25px/64px $font-family-base;
+  padding: 0 56px;
+  border: 0;
+  @include radius(6px);
+  @include shadow(0 0 0 0 transparent);
+
+  &.filled {
+    background: #8ab29e;
+    color: #fff;
+
+    &:hover {
+      background: #adc9bb;
+    }
+
+    &:disabled {
+      background: #d0e0d8;
+    }
+
+    &:active {
+      background: #8ab29e;
+      @include shadow(3px 3px 1px 0 #666);
+    }
+  }
+
+  &.outline {
+    border: 3px solid #8ab29e;
+    color: #8ab29e;
+    background: #fff;
+    line-height: 58px;
+
+    &:hover {
+      border-color: #adc9bb;
+      color: #adc9bb;
+    }
+
+    &:disabled {
+      border-color: #d0e0d8;
+      color: #d0e0d8;
+    }
+
+    &:active {
+      border: 3px solid #8ab29e;
+      color: #8ab29e;
+      @include shadow(0px 14px 24px 0px rgba(5, 2, 6, 0.15));
+    }
   }
 }
