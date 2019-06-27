@@ -1,0 +1,45 @@
+@import "~src/assets/styles/mixins";
+
+.main-footer {
+  @include full-width;
+  padding: 50px 100px;
+  .inner-wrap {
+    position: relative;
+  }
+}
+
+.cookies-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.4);
+  @include radius(6px);
+  p {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+    color: #000;
+  }
+
+  .close-btn {
+    font-size: 20px;
+    font-weight: 200;
+    color: #8fb9a4;
+  }
+}
+
+.steps-nav-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  .steps-btn {
+    & + .steps-btn {
+      margin-left: 32px;
+    }
+    img {}
+  }
+}

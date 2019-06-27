@@ -7,6 +7,12 @@ $experimental: true !default; // set True for support Old Browsers
   position: relative;
 }
 
+@mixin flex-full-width() {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
 // Responsive
 @mixin md-screen {
   @media only screen and (max-width: 991.98px) {

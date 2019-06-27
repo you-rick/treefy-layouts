@@ -1,0 +1,33 @@
+@import "~src/assets/styles/variables";
+@import "~src/assets/styles/mixins";
+
+.public-header {
+  @include flex-full-width;
+  padding: 18px 100px;
+
+  .inner-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .column {
+    }
+  }
+
+  .logo {
+    img {
+    }
+  }
+
+  .topnav {
+    a {
+      font: 400 20px/1 $font-family-base;
+      color: #8ab29e;
+
+      & + a {
+        margin-left: 74px;
+      }
+    }
+  }
+}
