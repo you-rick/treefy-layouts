@@ -292,6 +292,7 @@
 
 .location-select-wrap {
   margin-bottom: 40px;
+
   .location-list {
     margin: 0;
     padding-left: 40%;
@@ -314,6 +315,41 @@ ng-scrollbar {
   ::ng-deep {
     ng-scrollbar-y {
       @include radius(10px);
+    }
+  }
+}
+
+/* === Location with Map box === */
+.location-map-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  .map-box {
+    width: 130px;
+    height: 180px;
+    background: #ccc;
+    @include radius(10px);
+
+    agm-map {
+      height: 180px;
+    }
+  }
+
+  .form-box {
+    padding-left: 40px;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    .input-group {
+      margin-bottom: 16px;
+    }
+
+    .form-control {
+      height: 32px;
+      padding: 0 8px;
+      width: 100%;
     }
   }
 }

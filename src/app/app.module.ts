@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {NgScrollbarModule} from 'ngx-scrollbar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgScrollbarModule } from 'ngx-scrollbar';
+import { AgmCoreModule } from '@agm/core';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +28,7 @@ import { CalendarComponent } from './layout/dashboard/calendar/calendar.componen
 import { CalendarTopbarComponent } from './layout/dashboard/calendar/calendar-topbar/calendar-topbar.component';
 import { CalendarLeftbarComponent } from './layout/dashboard/calendar/calendar-leftbar/calendar-leftbar.component';
 import { CalendarInitialComponent } from './layout/dashboard/calendar/calendar-initial/calendar-initial.component';
-import {CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks/calendar-weeks.component';
+import { CalendarWeeksComponent} from './layout/dashboard/calendar/calendar-weeks/calendar-weeks.component';
 import { AuthenticationComponent } from './layout/authentication/authentication.component';
 import { SignInComponent } from './layout/authentication/sign-in/sign-in.component';
 import { SignUpComponent } from './layout/authentication/sign-up/sign-up.component';
@@ -71,7 +73,10 @@ import { FooterComponent } from './layout/shared/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDQoc5qsdBCo5UQkPR2FGvKs--dQYosBZM'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

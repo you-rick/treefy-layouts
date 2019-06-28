@@ -253,4 +253,38 @@
     </ng-template>
   </ngb-tab>
   <!-- .ngb-tab -->
+
+  <ngb-tab title="2.2.1 Select Location">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Location of [name of business]</h1>
+        <form>
+          <div class="location-map-wrap">
+            <div class="map-box">
+              <agm-map [latitude]="43.2633182" [longitude]="-2.9685838" [zoom]="11" [zoomControl]="false" [disableDefaultUI]="false" [streetViewControl]="false">
+                <agm-marker [latitude]="43.2633182" [longitude]="-2.9685838"></agm-marker>
+              </agm-map>
+            </div>
+            <div class="form-box">
+              <p>Add the address*</p>
+              <div class="input-group">
+                <input type="text" class="form-control field" placeholder="City"/>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control field" placeholder="Street"/>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control field" placeholder="Postal Code"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <button class="auth-btn filled">Continue</button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
 </ngb-tabset>
