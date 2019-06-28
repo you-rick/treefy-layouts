@@ -48,6 +48,8 @@
 
 /* === Popup Elements === */
 .auth-popup-panel {
+  font-weight: 100;
+  font-size: 20px;
   padding: 0 50px;
   -webkit-font-smoothing: initial;
 
@@ -95,7 +97,7 @@
         position: absolute;
         top: 0;
         left: 25px;
-        z-index: 2;
+        z-index: 4;
         background-color: transparent;
         border: 0;
         height: 32px;
@@ -288,6 +290,16 @@
   }
 }
 
+.location-select-wrap {
+  margin-bottom: 40px;
+  .location-list {
+    margin: 0;
+    padding-left: 40%;
+  }
+}
+
+
+/* === Custom Scrollbar === */
 ng-scrollbar {
   --scrollbar-color: transparent;
   --scrollbar-container-color: #8ab29e;
@@ -298,6 +310,7 @@ ng-scrollbar {
   --scrollbar-padding: 3px;
   --scroll-view-margin: 0;
   --scroll-view-color: transparent;
+
   ::ng-deep {
     ng-scrollbar-y {
       @include radius(10px);

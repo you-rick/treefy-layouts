@@ -221,4 +221,36 @@
     </ng-template>
   </ngb-tab>
   <!-- .ngb-tab -->
+
+  <ngb-tab title="2.2. Select Location">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Location of [name of business]</h1>
+        <form>
+          <div class="location-select-wrap">
+            <p class="text-center">What is your platform?*</p>
+            <ul class="location-list">
+              <li>
+                <label class="custom-check">
+                  <input class="checkbox" type="checkbox" value="">
+                  <span>Online</span>
+                </label>
+              </li>
+              <li>
+                <label class="custom-check">
+                  <input class="checkbox" type="checkbox" value="">
+                  <span>Offline</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-wrap">
+            <button class="auth-btn filled">Continue</button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
 </ngb-tabset>
