@@ -1,3 +1,224 @@
-<p>
-  sign-up works!
-</p>
+<ngb-tabset type="pills">
+  <ngb-tab title="1.0. User">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Sign up for a free trial</h1>
+        <form>
+          <div class="input-group with-icon">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/username.png" alt="Name" width="32"/>
+            </span>
+            <input type="text" class="form-control field" placeholder="Choose a username"/>
+          </div>
+
+          <div class="input-group with-icon">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/email.png" alt="Email" width="34"/>
+            </span>
+            <input type="email" class="form-control field" placeholder="What's your e-mail?"/>
+          </div>
+
+          <div class="input-group with-icon">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/password.png" alt="Password" width="32"/>
+            </span>
+            <input type="password" class="form-control field" placeholder="Choose a Password"/>
+          </div>
+
+          <div class="input-group with-icon">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/phone.png" alt="Phone" width="34"/>
+            </span>
+            <input type="email" class="form-control field" placeholder="What's your phone number?"/>
+          </div>
+
+          <div class="d-flex flex-column align-items-center">
+            <button class="auth-btn filled">Start my treefy account</button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+
+  <ngb-tab title="2.0. Location">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Add your business’ information</h1>
+        <form>
+          <div class="input-group with-icon">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/business.png" alt="Business" width="32"/>
+            </span>
+            <input type="text" class="form-control field" placeholder="What’s the name of your business?*"/>
+          </div>
+          <div class="input-group with-icon">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/phone.png" alt="Phone" width="34"/>
+            </span>
+            <input type="email" class="form-control field" placeholder="What’s the business’ phone number?*"/>
+          </div>
+          <div class="input-group with-icon with-r-btn">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/category.png" alt="Category" width="32"/>
+            </span>
+            <input type="text" class="form-control field" placeholder="Select a category for your business*" readonly/>
+            <button type="button" class="details-btn">
+              <img src="assets/images/png-icons/arrow_right.png" alt="Next"/>
+            </button>
+          </div>
+          <div class="input-group with-icon with-r-btn">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/location.png" alt="Location" width="30"/>
+            </span>
+            <input type="text" class="form-control field" placeholder="What’s its location?*" readonly/>
+            <button type="button" class="details-btn">
+              <img src="assets/images/png-icons/arrow_right.png" alt="Next"/>
+            </button>
+          </div>
+          <div class="input-group with-icon with-r-btn">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/time.png" alt="Time" width="32"/>
+            </span>
+            <input type="text" class="form-control field" placeholder="Monday-Friday 09:00-18:00" readonly/>
+            <button type="button" class="details-btn">
+              <img src="assets/images/png-icons/arrow_right.png" alt="Next"/>
+            </button>
+          </div>
+
+
+          <div class="btn-wrap">
+            <button class="auth-btn outline">Delete</button>
+            <button class="auth-btn filled">Continue</button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="2.1. Categories">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Select categories for your business</h1>
+        <form>
+          <div class="input-group search">
+            <span class="icon-box">
+              <img src="assets/images/png-icons/search.png" alt="Name" width="16"/>
+            </span>
+            <input type="text" class="form-control field" placeholder="Search by category"/>
+          </div>
+
+          <div class="categories-list-wrap">
+            <ng-scrollbar>
+              <ul class="categories-list">
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Dentistas</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos torácicos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos plásticos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Enfermeros</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos plásticos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Endocrinos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos torácicos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Digestólogos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Dietistas y nutricionistas</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Farmacólogos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Dentistas</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Dietistas y nutricionistas</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos torácicos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos plásticos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Cirujanos plásticos</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Enfermeros</span>
+                  </label>
+                </li>
+              </ul>
+            </ng-scrollbar>
+          </div>
+
+          <div class="btn-wrap">
+            <button class="auth-btn filled">Continue</button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+</ngb-tabset>

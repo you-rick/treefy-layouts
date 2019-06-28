@@ -37,9 +37,9 @@
 
   .auth-popup {
     width: 600px;
-    padding: 40px 50px;
+    padding: 40px 0;
     background: #fff;
-    margin: 40px 0;
+    margin: 60px 0;
     @include shadow(8px -10px 24px 0px rgba(5, 2, 6, 0.05));
     @include radius(6px);
   }
@@ -47,7 +47,8 @@
 
 
 /* === Popup Elements === */
-.auth-popup-body {
+.auth-popup-panel {
+  padding: 0 50px;
   -webkit-font-smoothing: initial;
 
   .input-group {
@@ -68,6 +69,48 @@
         }
       }
     }
+
+    &.with-r-btn {
+      position: relative;
+
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        border: 0;
+        height: 55px;
+        width: auto;
+        padding: 0 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &.search {
+      position: relative;
+
+      .icon-box {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        z-index: 2;
+        background-color: transparent;
+        border: 0;
+        height: 32px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-control {
+        height: 32px;
+        padding-left: 50px;
+        font-size: 20px;
+      }
+    }
   }
 
   .btn-wrap {
@@ -78,6 +121,7 @@
 
     .auth-btn {
       padding: 0 20px;
+
       & + .auth-btn {
         margin-left: 35px;
       }
@@ -85,15 +129,20 @@
   }
 }
 
-.remember-me {
-  font-weight: 100;
-  font-size: 20px;
-  color: #8ab29e;
-  user-select: none;
-  padding-left: 30px;
+.custom-check.remember-me {
   margin-bottom: 40px;
   margin-top: 18px;
+  padding-left: 30px;
+  color: #8ab29e;
+}
+
+.custom-check {
+  font-weight: 100;
+  font-size: 20px;
+  user-select: none;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
 
   input {
     opacity: 0;
@@ -177,6 +226,7 @@
   font: 500 25px/64px $font-family-base;
   padding: 0 56px;
   border: 0;
+  -webkit-font-smoothing: antialiased;
   @include radius(6px);
   @include shadow(0 0 0 0 transparent);
 
@@ -218,6 +268,39 @@
       border: 3px solid #8ab29e;
       color: #8ab29e;
       @include shadow(0px 14px 24px 0px rgba(5, 2, 6, 0.15));
+    }
+  }
+}
+
+
+.categories-list-wrap {
+  height: 390px;
+  margin-bottom: 30px;
+  padding-right: 25px;
+}
+
+.categories-list {
+  margin: 0;
+  padding: 0 0 0 25px;
+
+  li {
+
+  }
+}
+
+ng-scrollbar {
+  --scrollbar-color: transparent;
+  --scrollbar-container-color: #8ab29e;
+  --scrollbar-thumb-color: #fff;
+  --scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.6);
+  --scrollbar-border-radius: 10px;
+  --scrollbar-size: 8px;
+  --scrollbar-padding: 3px;
+  --scroll-view-margin: 0;
+  --scroll-view-color: transparent;
+  ::ng-deep {
+    ng-scrollbar-y {
+      @include radius(10px);
     }
   }
 }

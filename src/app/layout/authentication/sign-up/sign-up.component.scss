@@ -1,0 +1,25 @@
+@import "~src/assets/styles/variables";
+@import "~src/assets/styles/mixins";
+
+::ng-deep {
+  ul.nav-pills {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    flex-direction: column;
+
+    .nav-item {
+      .nav-link {
+        background: #fff;
+        color: #8ab29e;
+        padding: 5px 8px;
+        font-size: 14px;
+
+        &.active {
+          color: #fff;
+          background: #8ab29e;
+        }
+      }
+    }
+  }
+}

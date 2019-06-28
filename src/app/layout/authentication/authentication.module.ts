@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgScrollbarModule} from 'ngx-scrollbar';
 
 import {AppRoutingModule} from '../../app-routing.module';
 import {AuthenticationComponent} from './authentication.component';
@@ -20,7 +21,8 @@ import {FooterComponent} from '../shared/footer/footer.component';
   imports: [
     CommonModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgScrollbarModule
   ]
 })
 export class AuthenticationModule { }
