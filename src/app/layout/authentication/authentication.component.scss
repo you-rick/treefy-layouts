@@ -421,3 +421,151 @@ ng-scrollbar {
     }
   }
 }
+
+/* === Services table === */
+.services-table {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+
+  tr {
+  }
+
+  td {
+    padding: 3px 12px;
+    line-height: 2;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &[colspan] {
+      background: #f3f7f5;
+      line-height: 1.2;
+      @include radius(6px);
+    }
+  }
+
+  th {
+    padding: 5px 12px;
+    font-weight: 100;
+  }
+
+  thead {
+    th {
+      padding-bottom: 20px;
+    }
+  }
+
+  tbody {
+    tr:last-child {
+      td {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+/* === Terms and Conditions === */
+.terms-list {
+  margin: 0 0 40px;
+  padding: 0;
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+
+    .custom-switch {
+      padding-left: 64px;
+
+      .custom-control-input {
+        &:checked ~ .custom-control-label {
+          &::before {
+            border-color: #8ab29e;
+            background: #8ab29e;
+          }
+
+          &::after {
+            background: #fff;
+            -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+          }
+        }
+
+        &:focus ~ .custom-control-label::before {
+          @include shadow(none);
+        }
+      }
+
+      .custom-control-label {
+        position: static;
+        &::before {
+          left: 0;
+          top: 0;
+          width: 46px;
+          height: 28px;
+          border-color: #8ab29e;
+          @include radius(20px);
+        }
+
+        &::after {
+          width: 20px;
+          height: 20px;
+          background: #8ab29e;
+          top: 4px;
+          left: 5px;
+          @include radius(20px);
+        }
+      }
+    }
+  }
+}
+
+/* === Schedule List === */
+.schedule-list {
+  margin-bottom: 40px;
+  & > li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    & + li {
+      margin-top: 22px;
+    }
+    .custom-check {
+      flex-basis: 0;
+      flex-grow: 1;
+      color: #000;
+    }
+    .column {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+    .schedule-toggle {
+      border: 0;
+      font-size: 20px;
+      font-weight: 100;
+      &:after {
+        display: none;
+      }
+      span {}
+      img {
+        margin-left: 12px;
+      }
+    }
+    .closed {
+      font-size: 16px;
+    }
+    .add-time {
+      font-size: 16px;
+      color: #8ab29e;
+      font-weight: 100;
+    }
+  }
+}

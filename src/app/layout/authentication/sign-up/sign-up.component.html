@@ -261,11 +261,9 @@
         <form>
           <div class="location-select-wrap">
             <div class="map-box">
-              <!---
               <agm-map [latitude]="43.2633182" [longitude]="-2.9685838" [zoom]="11" [zoomControl]="false" [disableDefaultUI]="false" [streetViewControl]="false">
                 <agm-marker [latitude]="43.2633182" [longitude]="-2.9685838"></agm-marker>
               </agm-map>
-              --->
             </div>
             <div class="form-box">
               <p>Add the address*</p>
@@ -368,6 +366,393 @@
         <div class="btn-wrap">
           <button class="auth-btn filled">Edit</button>
         </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="3.2 User's Schedule">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Select your schedule in [business name]</h1>
+
+        <ul class="schedule-list">
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Monday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Tuesday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Wednesday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Thursday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Friday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Saturday</span>
+            </label>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Sunday</span>
+            </label>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="btn-wrap">
+          <button class="auth-btn filled">Save</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="4.1 Assign Services">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Assign staff and location to services</h1>
+        <table class="services-table">
+          <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Location 1</th>
+            <th>Location 2</th>
+            <th>Location 3</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td colspan="4" class="service-title">Service 1</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+          <tbody>
+          <tr>
+            <td colspan="4" class="service-title">Service 2</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+          <tbody>
+          <tr>
+            <td colspan="4" class="service-title">Service 3</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-check">
+                <input class="checkbox" type="checkbox" value="">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="btn-wrap">
+          <button class="auth-btn filled">Save</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+
+  <ngb-tab title="5.0. Terms and Conditions">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Terms and Conditions</h1>
+        <form>
+          <ul class="terms-list">
+            <li>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="terms_check_1">
+                <label class="custom-control-label" for="terms_check_1">Aceptación los Términos y Condiciones y la
+                  Política de Privacidad*</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="terms_check_2">
+                <label class="custom-control-label" for="terms_check_2">Consentimiento para el proceso de datos
+                  personales para la presentación de ofertas de comercios*</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="terms_check_3">
+                <label class="custom-control-label" for="terms_check_3">Consentimiento para comunicaciones
+                  electrónicas</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="terms_check_4">
+                <label class="custom-control-label" for="terms_check_4">Consentimiento para la creación de perfiles de
+                  datos (profiling)</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="terms_check_5">
+                <label class="custom-control-label" for="terms_check_5">Reconocimiento de su familiar</label>
+              </div>
+            </li>
+          </ul>
+
+          <div class="btn-wrap">
+            <button class="auth-btn filled">Start using treefy</button>
+          </div>
+        </form>
       </div>
     </ng-template>
   </ngb-tab>
