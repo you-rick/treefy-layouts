@@ -227,7 +227,7 @@
       <div class="auth-popup-panel">
         <h1 class="popup-headline">Location of [name of business]</h1>
         <form>
-          <div class="location-select-wrap">
+          <div class="location-platform-wrap">
             <p class="text-center">What is your platform?*</p>
             <ul class="location-list">
               <li>
@@ -259,11 +259,13 @@
       <div class="auth-popup-panel">
         <h1 class="popup-headline">Location of [name of business]</h1>
         <form>
-          <div class="location-map-wrap">
+          <div class="location-select-wrap">
             <div class="map-box">
+              <!---
               <agm-map [latitude]="43.2633182" [longitude]="-2.9685838" [zoom]="11" [zoomControl]="false" [disableDefaultUI]="false" [streetViewControl]="false">
                 <agm-marker [latitude]="43.2633182" [longitude]="-2.9685838"></agm-marker>
               </agm-map>
+              --->
             </div>
             <div class="form-box">
               <p>Add the address*</p>
@@ -287,4 +289,89 @@
     </ng-template>
   </ngb-tab>
   <!-- .ngb-tab -->
+
+  <ngb-tab title="2.2.2 Location Dropdown">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Location of [name of business]</h1>
+        <form>
+          <div class="location-select-wrap">
+            <div class="form-box">
+              <p class="text-center">What software do you use?*</p>
+              <div class="input-group">
+                <select class="form-control field select">
+                  <option>-- Select Software ---</option>
+                  <option>Skype</option>
+                  <option>Slack</option>
+                  <option>Gmail</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <button class="auth-btn filled">Save</button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="2.4 Location Overview">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Business information</h1>
+        <h4 class="subtitle">This is the information you provided</h4>
+      </div>
+      <div class="grey-box">
+        <div class="icon-box">
+          <img src="assets/images/png-icons/business.png" alt="Business" width="50"/>
+        </div>
+        <div class="info-box">
+          <h5 class="title">[Name of the business]</h5>
+          <p class="text">[Address]</p>
+        </div>
+        <nav>
+          <a href="#">Edit</a>
+        </nav>
+      </div>
+      <div class="auth-popup-panel">
+        <div class="btn-wrap">
+          <button class="auth-btn outline">Add more</button>
+          <button class="auth-btn filled">Continue</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="3.0 Profile Info">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Now you can edit profile's information</h1>
+        <h4 class="subtitle">Add staff now or do it later</h4>
+      </div>
+      <div class="grey-box">
+        <div class="icon-box">
+          <img src="assets/images/png-icons/profile.png" alt="Profile" width="68"/>
+        </div>
+        <div class="info-box">
+          <h5 class="title">John Doe</h5>
+          <p class="text">
+            Account manager<br/>
+            E-mail: b1244355@urhen.com
+          </p>
+        </div>
+      </div>
+      <div class="auth-popup-panel">
+        <div class="btn-wrap">
+          <button class="auth-btn filled">Edit</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+
 </ngb-tabset>

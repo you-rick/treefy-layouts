@@ -194,6 +194,18 @@
   span {
     font-weight: 400;
   }
+
+  & + .subtitle {
+    margin-top: -20px;
+  }
+}
+
+.subtitle {
+  font-size: 19px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .form-control {
@@ -209,6 +221,10 @@
     border: 0;
     @include shadow(none);
     @include radius(6px);
+  }
+
+  &.select {
+    -webkit-appearance: none;
   }
 
   &::-webkit-input-placeholder {
@@ -228,6 +244,8 @@
   font: 500 25px/64px $font-family-base;
   padding: 0 56px;
   border: 0;
+  min-width: 140px;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   @include radius(6px);
   @include shadow(0 0 0 0 transparent);
@@ -290,7 +308,7 @@
   }
 }
 
-.location-select-wrap {
+.location-platform-wrap {
   margin-bottom: 40px;
 
   .location-list {
@@ -320,15 +338,16 @@ ng-scrollbar {
 }
 
 /* === Location with Map box === */
-.location-map-wrap {
+.location-select-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 30px;
 
   .map-box {
     width: 130px;
     height: 180px;
+    margin-right: 40px;
     background: #ccc;
     @include radius(10px);
 
@@ -338,7 +357,6 @@ ng-scrollbar {
   }
 
   .form-box {
-    padding-left: 40px;
     flex-basis: 0;
     flex-grow: 1;
 
@@ -350,6 +368,56 @@ ng-scrollbar {
       height: 32px;
       padding: 0 8px;
       width: 100%;
+    }
+
+    &:only-child {
+      max-width: 300px;
+    }
+  }
+}
+
+
+/* === Grey Box === */
+.grey-box {
+  width: 100%;
+  padding: 20px 25px;
+  display: flex;
+  align-items: flex-start;
+  background: #f3f7f5;
+  margin-bottom: 50px;
+
+  .icon-box {
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .info-box {
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 20px;
+
+    .title {
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    .text {
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+  }
+
+  nav {
+    flex: 0 0 50px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: #8ab29e;
+      margin-bottom: 10px;
+      font-size: 16px;
     }
   }
 }
