@@ -53,6 +53,13 @@
   padding: 0 50px;
   -webkit-font-smoothing: initial;
 
+  form {
+    &.small {
+      width: 344px;
+      margin: 0 auto;
+    }
+  }
+
   .input-group {
     margin-bottom: 34px;
 
@@ -111,6 +118,45 @@
         height: 32px;
         padding-left: 50px;
         font-size: 20px;
+      }
+    }
+
+    &.locations {
+      position: relative;
+      .staff-location-popup {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin-left: 16px;
+        min-width: 176px;
+        background: #8ab29e;
+        transform: translate(0, -50%);
+        @include radius(10px);
+        .list {
+          margin: 0;
+          padding: 0;
+          li {
+            height: 48px;
+            width: 100%;
+            padding-left: 25px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff;
+            & + li {
+              border-top: 3px solid #fff;
+              height: 51px;
+            }
+            .custom-check {
+              color: #fff;
+              span {
+                &:before {
+                  background-image: url("~src/assets/images/png-icons/check-sprite-white.png");
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -506,6 +552,7 @@ ng-scrollbar {
 
       .custom-control-label {
         position: static;
+
         &::before {
           left: 0;
           top: 0;
@@ -531,41 +578,97 @@ ng-scrollbar {
 /* === Schedule List === */
 .schedule-list {
   margin-bottom: 40px;
+
   & > li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+
     & + li {
       margin-top: 22px;
     }
+
     .custom-check {
       flex-basis: 0;
       flex-grow: 1;
       color: #000;
     }
+
     .column {
       flex-basis: 0;
       flex-grow: 1;
+
+      [ngbdropdown] + [ngbdropdown] {
+        margin-top: 6px;
+      }
     }
+
     .schedule-toggle {
       border: 0;
       font-size: 20px;
       font-weight: 100;
+
       &:after {
         display: none;
       }
-      span {}
+
+      span {
+      }
+
       img {
         margin-left: 12px;
       }
     }
+
     .closed {
       font-size: 16px;
     }
+
     .add-time {
       font-size: 16px;
       color: #8ab29e;
       font-weight: 100;
+    }
+  }
+}
+
+/* === Progress Bar === */
+.auth-progressbar-wrap {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  z-index: 1;
+  width: 440px;
+  max-width: 25vw;
+  transform: translate(-50%, 0);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .progress-value {
+    width: 60px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+  }
+
+  ::ng-deep {
+    ngb-progressbar {
+      flex-basis: 0;
+      flex-grow: 1;
+
+      .progress {
+        height: 11px;
+        background: transparent;
+        border: 3px solid #8ab29e;
+        @include radius(10px);
+      }
+
+      .progress-bar {
+        background: #8ab29e !important;
+        @include radius(0 10px 10px 0);
+      }
     }
   }
 }

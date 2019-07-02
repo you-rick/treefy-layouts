@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  tabsUpdate(evt: any) {
+    console.log(evt);
+  }
 
   ngOnInit() {
   }

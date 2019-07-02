@@ -1,4 +1,4 @@
-<ngb-tabset type="pills">
+<ngb-tabset type="pills" (tabChange)="tabsUpdate($event)">
   <ngb-tab title="1.0. User">
     <ng-template ngbTabContent>
       <div class="auth-popup-panel">
@@ -40,7 +40,6 @@
     </ng-template>
   </ngb-tab>
   <!-- .ngb-tab -->
-
 
   <ngb-tab title="2.0. Location">
     <ng-template ngbTabContent>
@@ -261,7 +260,8 @@
         <form>
           <div class="location-select-wrap">
             <div class="map-box">
-              <agm-map [latitude]="43.2633182" [longitude]="-2.9685838" [zoom]="11" [zoomControl]="false" [disableDefaultUI]="false" [streetViewControl]="false">
+              <agm-map [latitude]="43.2633182" [longitude]="-2.9685838" [zoom]="11" [zoomControl]="false"
+                       [disableDefaultUI]="false" [streetViewControl]="false">
                 <agm-marker [latitude]="43.2633182" [longitude]="-2.9685838"></agm-marker>
               </agm-map>
             </div>
@@ -311,6 +311,192 @@
             <button class="auth-btn filled">Save</button>
           </div>
         </form>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="2.3 Opening Hours">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Opening hours for [business name]</h1>
+
+        <ul class="schedule-list">
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Monday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Tuesday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>15:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>13:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>19:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Wednesday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Thursday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Friday</span>
+            </label>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>09:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+              <button class="add-time">+Add</button>
+            </div>
+            <div class="column">
+              <div ngbDropdown>
+                <button class="schedule-toggle" ngbDropdownToggle>
+                  <span>18:00</span>
+                  <img src="assets/images/png-icons/arrow_down.png" alt="Select Time"/>
+                </button>
+                <!-- <div ngbDropdownMenu></div> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Saturday</span>
+            </label>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+          </li>
+
+          <li>
+            <label class="custom-check">
+              <input class="checkbox" type="checkbox" value="">
+              <span>Sunday</span>
+            </label>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+            <div class="column">
+              <span class="closed">closed</span>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="btn-wrap">
+          <button class="auth-btn filled">Save</button>
+        </div>
       </div>
     </ng-template>
   </ngb-tab>
@@ -366,6 +552,55 @@
         <div class="btn-wrap">
           <button class="auth-btn filled">Edit</button>
         </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
+  <ngb-tab title="3.1 Edit Profile">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <form class="small">
+          <h4 class="subtitle text-left font-weight-bolder">1st staff member</h4>
+          <div class="input-group">
+            <input type="text" class="form-control field" placeholder="What's the name of the stuff member?"/>
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control field" placeholder="What's their role?"/>
+          </div>
+          <div class="input-group locations">
+            <input type="text" class="form-control field" placeholder="Where do they work?"/>
+            <div class="staff-location-popup">
+              <ul class="list">
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Location 1</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Location 2</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-check">
+                    <input class="checkbox" type="checkbox" value="">
+                    <span>Location 3</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="email" class="form-control field" placeholder="What's their e-mail?"/>
+          </div>
+          <div class="btn-wrap">
+            <button class="auth-btn outline">Add more</button>
+            <button class="auth-btn filled">Save</button>
+          </div>
+        </form>
       </div>
     </ng-template>
   </ngb-tab>
