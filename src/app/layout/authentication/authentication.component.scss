@@ -123,6 +123,7 @@
 
     &.locations {
       position: relative;
+
       .staff-location-popup {
         position: absolute;
         left: 100%;
@@ -131,10 +132,12 @@
         min-width: 176px;
         background: #8ab29e;
         transform: translate(0, -50%);
-        @include radius(10px);
+        @include radius(6px);
+
         .list {
           margin: 0;
           padding: 0;
+
           li {
             height: 48px;
             width: 100%;
@@ -143,12 +146,15 @@
             justify-content: flex-start;
             align-items: center;
             color: #fff;
+
             & + li {
               border-top: 3px solid #fff;
               height: 51px;
             }
+
             .custom-check {
               color: #fff;
+
               span {
                 &:before {
                   background-image: url("~src/assets/images/png-icons/check-sprite-white.png");
@@ -175,6 +181,11 @@
       }
     }
   }
+}
+
+.green-link {
+  color: $publicGreen;
+  font-weight: 400;
 }
 
 .custom-check.remember-me {
@@ -669,6 +680,94 @@ ng-scrollbar {
         background: #8ab29e !important;
         @include radius(0 10px 10px 0);
       }
+    }
+  }
+}
+
+
+/* === Services List === */
+.services-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 40px;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 14px 15px;
+
+    &:nth-child(odd) {
+      background: #f3f7f5;
+
+      .price-box {
+        .price-field {
+          background: #fff;
+        }
+      }
+    }
+
+    .name {
+      text-align: right;
+      font-size: 20px;
+      padding-right: 34px;
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    .duration-wrap {
+      display: flex;
+      align-items: center;
+      padding-right: 26px;
+      width: 196px;
+
+      .dropdown-box {
+        min-width: 72px;
+        padding: 0 5px;
+        border: 1px solid #ccc;
+        @include radius(6px);
+
+        & + .dropdown-box {
+          margin-left: 5px;
+        }
+      }
+
+      .selected-time {
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          font-size: 20px;
+          font-weight: 100;
+          padding-right: 6px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .price-box {
+      padding-right: 30px;
+
+      .price-field {
+        border: 0;
+        height: 32px;
+        width: 94px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        background: #f3f7f5;
+        @include radius(6px);
+      }
+    }
+
+    .remove-line {
+      font-size: 16px;
+      color: $publicGreen;
+      margin-right: 10px;
+      opacity: 0.75;
     }
   }
 }

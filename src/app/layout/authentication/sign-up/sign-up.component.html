@@ -1,4 +1,5 @@
 <ngb-tabset type="pills" (tabChange)="tabsUpdate($event)">
+
   <ngb-tab title="1.0. User">
     <ng-template ngbTabContent>
       <div class="auth-popup-panel">
@@ -778,6 +779,101 @@
   </ngb-tab>
   <!-- .ngb-tab -->
 
+  <ngb-tab title="4.0 Services">
+    <ng-template ngbTabContent>
+      <div class="auth-popup-panel">
+        <h1 class="popup-headline">Add Services and pricing</h1>
+      </div>
+
+      <ul class="services-list">
+        <li>
+          <span class="name">Dentistas</span>
+          <div class="duration-wrap">
+            <div class="dropdown-box">
+              <div class="selected-time">
+                <span>1 h</span>
+                <img src="assets/images/png-icons/arrow_down.png" alt="Select"/>
+              </div>
+              <!--- Code for time dropdown goes here --->
+            </div>
+            <div class="dropdown-box">
+              <div class="selected-time">
+                <span>30 min</span>
+                <img src="assets/images/png-icons/arrow_down.png" alt="Select"/>
+              </div>
+              <!--- Code for time dropdown goes here --->
+            </div>
+          </div>
+          <!-- /.duration-wrap -->
+          <div class="price-box">
+            <input type="text" class="price-field" value="90,00&euro;"/>
+          </div>
+          <button class="remove-line">Delete</button>
+        </li>
+        <li>
+          <span class="name">Digestólogos</span>
+          <div class="duration-wrap">
+            <div class="dropdown-box">
+              <div class="selected-time">
+                <span>1 h</span>
+                <img src="assets/images/png-icons/arrow_down.png" alt="Select"/>
+              </div>
+              <!--- Code for time dropdown goes here --->
+            </div>
+            <div class="dropdown-box">
+              <div class="selected-time">
+                <span>00 min</span>
+                <img src="assets/images/png-icons/arrow_down.png" alt="Select"/>
+              </div>
+              <!--- Code for time dropdown goes here --->
+            </div>
+          </div>
+          <!-- /.duration-wrap -->
+          <div class="price-box">
+            <input type="text" class="price-field" value="60,00&euro;"/>
+          </div>
+          <button class="remove-line">Delete</button>
+        </li>
+        <li>
+          <span class="name">Cirujanos</span>
+          <div class="duration-wrap">
+            <div class="dropdown-box">
+              <div class="selected-time">
+                <span>1 h</span>
+                <img src="assets/images/png-icons/arrow_down.png" alt="Select"/>
+              </div>
+              <!--- Code for time dropdown goes here --->
+            </div>
+            <div class="dropdown-box">
+              <div class="selected-time">
+                <span>00 min</span>
+                <img src="assets/images/png-icons/arrow_down.png" alt="Select"/>
+              </div>
+              <!--- Code for time dropdown goes here --->
+            </div>
+          </div>
+          <!-- /.duration-wrap -->
+          <div class="price-box">
+            <input type="text" class="price-field" value="30,00&euro;"/>
+          </div>
+          <button class="remove-line">Delete</button>
+        </li>
+      </ul>
+      <!-- /.services-list -->
+
+      <div class="auth-popup-panel">
+        <p class="text-center mb-4">
+          <a href="#" class="green-link">+ Assign staff and location to services</a>
+        </p>
+        <div class="btn-wrap">
+          <button class="auth-btn outline">Add more</button>
+          <button class="auth-btn filled">Save</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <!-- .ngb-tab -->
+
   <ngb-tab title="4.1 Assign Services">
     <ng-template ngbTabContent>
       <div class="auth-popup-panel">
@@ -940,7 +1036,6 @@
     </ng-template>
   </ngb-tab>
   <!-- .ngb-tab -->
-
 
   <ngb-tab title="5.0. Terms and Conditions">
     <ng-template ngbTabContent>
